@@ -18,6 +18,7 @@ equipamentos: [academia completa]
 restricoes: []
 parq_alerta: false
 liberacao_medica: nao_necessaria
+aviso_aceito_em: 2026-08-25
 criado_em: 2026-08-25
 atualizado_em: 2026-08-26
 ---

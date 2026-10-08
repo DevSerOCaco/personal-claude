@@ -7,7 +7,7 @@ O repositório **é** a base de conhecimento sobre você: perfil, avaliações f
 Não é um aplicativo. É uma estrutura de arquivos Markdown + instruções para o agente (`CLAUDE.md`), sem nenhuma dependência de runtime.
 
 > [!WARNING]
-> **Aviso de responsabilidade.** Esta ferramenta **não substitui médico, nutricionista ou profissional de educação física**. Ela não faz diagnósticos, não prescreve dieta nem suplementação e pode errar. Antes de começar ou intensificar um programa de exercícios, especialmente se você tem alguma condição de saúde, consulte um médico. Diante de dor no peito, falta de ar desproporcional, tontura ou desmaio, **pare o exercício e procure atendimento**. Você é responsável pelo uso que faz das sugestões.
+> **Aviso de responsabilidade.** Esta ferramenta é um assistente de IA e **não substitui médico, nutricionista ou profissional de educação física**. Ela existe para servir de **apoio** a quem ainda não tem acompanhamento profissional. Sempre que puder, procure um profissional especializado. Ela não faz diagnósticos, não prescreve dieta nem suplementação e pode errar. Antes de começar ou intensificar um programa de exercícios, especialmente se você tem alguma condição de saúde, consulte um médico. Diante de dor no peito, falta de ar desproporcional, tontura ou desmaio, **pare o exercício e procure atendimento**. Você é responsável pelo uso que faz das sugestões.
 
 ---
 

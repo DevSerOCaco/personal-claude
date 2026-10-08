@@ -13,7 +13,11 @@ Argumentos: `$ARGUMENTS` (se houver um nome, use-o como resposta à primeira per
 1. Rode `git pull --rebase` se houver remote.
 2. Se `dados/perfil.md` **já existir**: informe de quem é a base ("Este repositório já tem o perfil do **{nome}**") e pergunte se a pessoa quer **refazer** o onboarding (sobrescreve o perfil, mas mantém o histórico) ou usar `/atualizar-perfil`. Não continue sem resposta. Se o nome informado for de outra pessoa, siga a regra de identificação do `CLAUDE.md` (parar).
 3. Se o `origin` apontar para o template público `personal-claude`, avise que os dados devem ficar num repositório **privado** e pare.
-4. Explique em 2–3 linhas como vai funcionar: algumas perguntas curtas, uma de cada vez, uns 10 minutos; "não sei" e "prefiro não dizer" são respostas válidas.
+4. **Aviso de responsabilidade (obrigatório, antes de qualquer pergunta).** Apresente com suas palavras, de forma clara e acolhedora, sem tom de sermão:
+   > Antes de começar, um aviso importante: eu sou um assistente de IA, **não um profissional**. Não substituo um profissional de educação física, um médico ou um nutricionista. Sirvo como **apoio** para você treinar com mais orientação e segurança enquanto não tem acompanhamento profissional, e posso errar. Sempre que possível, e principalmente quando der para investir nisso, procure um profissional especializado. Se surgir dor, sintoma estranho ou exame alterado, vou te encaminhar para um.
+
+   Peça uma confirmação simples ("Entendido? Podemos seguir?"). **Não continue sem ela.** Se a pessoa não concordar, encerre com educação, sem criar arquivos. Registre a data da confirmação em `aviso_aceito_em` no perfil.
+5. Explique em 2–3 linhas como vai funcionar: algumas perguntas curtas, uma de cada vez, uns 10 minutos; "não sei" e "prefiro não dizer" são respostas válidas.
 
 ## Entrevista
 Faça **uma pergunta por vez** (no máximo um bloco pequeno de 2–3 itens relacionados). Espere a resposta. Se algo ficar vago, peça um detalhe antes de seguir. Não comente cada resposta: confirme rapidamente e avance.
@@ -32,7 +36,7 @@ Faça **uma pergunta por vez** (no máximo um bloco pequeno de 2–3 itens relac
 
 ## Ao final
 1. Crie, a partir dos modelos em `templates/` e sem inventar nada:
-   - `dados/perfil.md` (de `templates/perfil.md`): `criado_em` e `atualizado_em` = hoje; respostas do PAR-Q registradas; no Histórico de alterações, `- {hoje}: perfil criado no onboarding`.
+   - `dados/perfil.md` (de `templates/perfil.md`): `criado_em` e `atualizado_em` = hoje; `aviso_aceito_em` = data da confirmação do aviso; respostas do PAR-Q registradas; no Histórico de alterações, `- {hoje}: perfil criado no onboarding`.
    - `dados/conhecimento.md` (de `templates/conhecimento.md`): o que já se sabe de preferências, desconfortos, aderência e sono, cada linha com `({hoje})`.
    - `dados/decisoes.md` (de `templates/decisoes.md`): primeira entrada `## {hoje} — Onboarding`, com o objetivo definido e, se houver, a pendência de liberação médica.
    - Crie as pastas `dados/avaliacoes/`, `dados/exames/`, `dados/treinos/` e `dados/diario/` com um `.gitkeep` cada.

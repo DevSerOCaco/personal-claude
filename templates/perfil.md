@@ -17,6 +17,7 @@ equipamentos: []           # ex.: [academia completa] ou [halteres até 20kg, ba
 restricoes: []             # limitações físicas atuais, ex.: [evitar carga axial pesada]
 parq_alerta: false         # true se respondeu "sim" a alguma pergunta do PAR-Q
 liberacao_medica:          # sim | nao | pendente | nao_necessaria
+aviso_aceito_em:           # AAAA-MM-DD em que confirmou o aviso de responsabilidade no /onboarding
 criado_em:                 # AAAA-MM-DD
 atualizado_em:             # AAAA-MM-DD
 ---
