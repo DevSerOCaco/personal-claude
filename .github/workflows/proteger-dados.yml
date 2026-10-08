@@ -1,0 +1,34 @@
+# Impede que dados reais entrem no repositório PÚBLICO do template.
+#
+# Só roda quando a variável de repositório IS_TEMPLATE é 'true'
+# (Settings → Secrets and variables → Actions → Variables) ou quando o repositório
+# está marcado como template. Nos repositórios privados criados a partir do template,
+# nenhuma das duas condições vale e o job é ignorado.
+name: Proteger dados
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verificar-dados:
+    if: ${{ vars.IS_TEMPLATE == 'true' || github.event.repository.is_template == true }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: dados/ deve conter apenas README.md e .gitkeep
+        run: |
+          extras=$(find dados -mindepth 1 ! -path dados/README.md ! -path dados/.gitkeep | sort)
+          if [ -n "$extras" ]; then
+            echo "::error::A pasta dados/ do template deve ficar vazia. Arquivos encontrados:"
+            echo "$extras"
+            echo
+            echo "Dados reais pertencem ao SEU repositório privado (criado com 'Use this template')."
+            echo "Remova-os deste repositório e, se já foram publicados, considere reescrever o histórico."
+            exit 1
+          fi
+          echo "OK: dados/ contém apenas README.md e .gitkeep."

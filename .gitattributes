@@ -1,0 +1,3 @@
+# Ao trazer atualizações do template (scripts/atualizar-template.sh),
+# a versão local de dados/ sempre vence. O driver "ours" é configurado pelo script.
+dados/** merge=ours

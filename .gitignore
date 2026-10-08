@@ -1,0 +1,40 @@
+# ATENÇÃO: a pasta dados/ NÃO é ignorada de propósito.
+# No seu repositório privado ela precisa ser versionada.
+# No template público, o workflow proteger-dados.yml impede que dados reais entrem.
+
+# --- Sistema operacional ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*~
+.directory
+.Trash-*
+
+# --- Editores ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# --- Obsidian ---
+# Estado da interface e cache mudam o tempo todo e geram conflitos entre PC e celular.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace*.json
+.obsidian/cache
+.obsidian/.trash/
+.trash/
+# As configurações (.obsidian/*.json) e os plugins (.obsidian/plugins/) SÃO versionados,
+# para que o vault abra igual em todos os dispositivos.
+# Se preferir NÃO versionar os plugins, descomente a linha abaixo:
+# .obsidian/plugins/
+
+# --- Claude Code (configurações locais da máquina) ---
+.claude/settings.local.json
