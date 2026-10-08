@@ -24,14 +24,19 @@ circunferencias_cm:        # _d = direito, _e = esquerdo
   cintura:
   abdome:
   quadril:
-  braco_d:
+  braco_d:                 # relaxado
   braco_e:
+  braco_d_contraido:
+  braco_e_contraido:
   antebraco_d:
   antebraco_e:
-  coxa_d:
+  coxa_d:                  # no ponto indicado em coxa_local
   coxa_e:
+  coxa_d_distal:           # logo acima do joelho, se medida
+  coxa_e_distal:
   panturrilha_d:
   panturrilha_e:
+coxa_local:                # ponto de coxa_d/coxa_e: proximal | medial | outro (só compare coxas medidas no mesmo ponto)
 pressao_arterial:          # "120/80" (entre aspas)
 fc_repouso_bpm:
 testes: []                 # lista de { teste, resultado, unidade, categoria: forca | mobilidade | resistencia }

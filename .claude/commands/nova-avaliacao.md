@@ -25,6 +25,7 @@ Siga o protocolo do `CLAUDE.md` (sincronizar, identificar, ler a base).
    | Peso (kg) | 82,4 | 81,6 | −0,8 |
 
    - Inclua só as medidas presentes nas duas avaliações.
+   - Coxas: compare só se `coxa_local` for o mesmo nas duas; se diferir, deixe fora da tabela e avise.
    - Se os **métodos** forem diferentes (ex.: bioimpedância × dobras), avise que a comparação de % de gordura não é confiável.
    - Escreva a tabela na seção "Comparação com a avaliação anterior" do arquivo.
 5. **Comentar a evolução** (3–6 linhas), relacionando-a ao objetivo do perfil, ao plano vigente e à aderência do diário no período. Seja honesto: variações pequenas podem estar dentro do erro de medida. Salve na seção "Comentário".
